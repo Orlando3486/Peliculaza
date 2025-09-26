@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous" />
+    <link rel="icon" href="./assets/imagenes/Logo Popcorn Caricatura.png" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Peliculazas</title>
+  </head>
+  <body>
+    <header>
+      <div id="cabecera">
+        <img
+          src="./assets/imagenes/Logo Popcorn Caricatura.png"
+          alt="logoPeliculaza"
+          id="logo" />
+        <h1 id="titulo">PELICULAZA</h1>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    id="link"
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a id="link" class="nav-link active" href="./pelicula.html"
+                    >Crea tu pelicula</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a id="link" class="nav-link active" href="./perfil.html"
+                    >Perfil</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Busqueda"
+                  aria-label="Search"
+                  list="opciones"
+                  id="busqueda" />
+                <datalist id="opciones">
+                  <option value="Inicio"></option>
+                  <option value="Crear Pelicula"></option>
+                  <option value="Acerca De"></option>
+                  <option value="Perfil"></option>
+                  <option value="Favoritas"></option>
+                </datalist>
+                <button id="link" class="btn btn-outline-primary" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="contenedor-texto" class="container-fluid">
+        <h2 id="titulo-acerca">Acerca de Peliculaza</h2>
+        <article id="articuloTexto">
+          <p>
+            En un mundo donde el contenido audiovisual forma parte esencial del
+            día a día, nace esta plataforma con una misión clara: ofrecer
+            entretenimiento de calidad, accesible y disponible para todos, en
+            cualquier momento y lugar. La creación de esta plataforma surge de
+            la necesidad de brindar una alternativa que combine lo mejor del
+            cine con la comodidad de lo digital. Nos proponemos reunir películas
+            de diversos géneros y épocas, tanto clásicas como actuales, en un
+            entorno moderno, intuitivo y pensado para el usuario. 🌟
+            Entretenimiento de calidad Nuestro objetivo principal, es ofrecer un
+            catálogo cuidadosamente seleccionado que garantice una experiencia
+            cinematográfica enriquecedora. Nos enfocamos en títulos que
+            destaquen por su narrativa, dirección, actuación y producción,
+            priorizando tanto los grandes éxitos como las joyas menos conocidas
+            que merecen ser descubiertas. Accesibilidad para todos Creemos que
+            el cine debe ser una experiencia universal. Por eso, buscamos que
+            nuestra plataforma sea fácil de usar, rápida de cargar y compatible
+            con múltiples dispositivos, permitiendo que cualquier persona pueda
+            disfrutar del contenido sin barreras tecnológicas ni económicas.
+            Disponibilidad constante Una de nuestras prioridades es que los
+            usuarios puedan acceder al contenido en cualquier momento del día,
+            sin restricciones geográficas ni horarios. La plataforma estará
+            activa las 24 horas, todos los días del año, para que cada persona
+            pueda elegir cuándo y cómo ver sus películas favoritas. 🚀 Esperamos
+            que este proyecto no solo se convierta en una fuente confiable de
+            entretenimiento, sino también en un espacio de descubrimiento,
+            aprendizaje y conexión con la cultura cinematográfica. A largo
+            plazo, buscamos: Incluir funciones personalizadas como listas
+            favoritas, recomendaciones basadas en gustos y experiencias sociales
+            compartidas. Expandir el catálogo incluyendo producciones
+            independientes, cine internacional y documentales. Convertirnos en
+            una comunidad donde los amantes del cine puedan encontrarse, opinar,
+            compartir y disfrutar juntos.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="public/bundle.js"></script>
+  </body>
+</html>

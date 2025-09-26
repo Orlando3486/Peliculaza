@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous" />
+    <link rel="icon" href="./assets/imagenes/Logo Popcorn Caricatura.png" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Peliculazas</title>
+  </head>
+  <body>
+    <header>
+      <div id="cabecera">
+        <img
+          src="./assets/imagenes/Logo Popcorn Caricatura.png"
+          alt="logoPeliculaza"
+          id="logo" />
+        <h1 id="titulo">PELICULAZA</h1>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    id="link"
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a id="link" class="nav-link active" href="./pelicula.html"
+                    >Crea tu pelicula</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a id="link" class="nav-link active" href="./about.html"
+                    >Acerca De</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Busqueda"
+                  aria-label="Search"
+                  list="opciones"
+                  id="busqueda" />
+                <datalist id="opciones">
+                  <option value="Inicio"></option>
+                  <option value="Crear Pelicula"></option>
+                  <option value="Acerca De"></option>
+                  <option value="Perfil"></option>
+                  <option value="Favoritas"></option>
+                </datalist>
+                <button id="link" class="btn btn-outline-primary" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="contenedor-foto" class="container-fluid">
+        <h2 id="tituloPresentacion">Me presento</h2>
+        <article id="articuloFoto">
+          <p>
+            Mi nombre es Orlando Zarraga. Soy un desarrollador web apasionado
+            por transformar ideas en soluciones digitales funcionales,
+            eficientes y visualmente atractivas. Con una sólida base en
+            tecnologías como
+            <strong>HTML, CSS, JavaScript, React y Node.js</strong>, me
+            especializo en crear experiencias web modernas, accesibles y
+            optimizadas para el rendimiento.
+          </p>
+          <img
+            id="foto-orlando"
+            src="./assets/imagenes/foto-Orlando.jpg"
+            alt="Foto de Orlando Zarraga" />
+        </article>
+      </section>
+    </main>
+    <script src="public/bundle.js"></script>
+  </body>
+</html>

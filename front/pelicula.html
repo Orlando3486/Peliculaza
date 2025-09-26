@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous" />
+    <link rel="icon" href="./assets/imagenes/Logo Popcorn Caricatura.png" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Peliculaza</title>
+  </head>
+  <body>
+    <header>
+      <div id="cabecera">
+        <img
+          src="./assets/imagenes/Logo Popcorn Caricatura.png"
+          alt="logoPeliculaza"
+          id="logo" />
+        <h1 id="titulo">PELICULAZA</h1>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    id="link"
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a id="link" class="nav-link active" href="./about.html"
+                    >Acerca De</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a id="link" class="nav-link active" href="./perfil.html"
+                    >Perfil</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Busqueda"
+                  aria-label="Search"
+                  list="opciones"
+                  id="busqueda" />
+                <datalist id="opciones">
+                  <option value="Inicio"></option>
+                  <option value="Crear Pelicula"></option>
+                  <option value="Acerca De"></option>
+                  <option value="Perfil"></option>
+                  <option value="Favoritas"></option>
+                </datalist>
+                <button id="link" class="btn btn-outline-primary" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="seccion-formulario">
+        <h1 id="titulo-formulario">Crea tu pelicula</h1>
+        <form id="formulario">
+          <label for="titulo-form" class="form-label">Titulo:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="titulo-form"
+            placeholder="Nombre de la pelicula" />
+          <label for="año" class="form-label">Año:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="año"
+            min="1900"
+            max="2025"
+            placeholder="Año de lanzamiento" />
+
+          <label for="director-form" class="form-label">Director:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="director-form"
+            placeholder="Nombre del director" />
+
+          <div id="horas-minutos">
+            <label for="duracion-horas" class="form-label">Duracion:</label>
+            <input
+              placeholder="Horas"
+              ;
+              type="number"
+              class="form-control"
+              id="duracion-horas"
+              min="1"
+              max="12" />
+            <label for="duracion-minutos" class="form-label"></label>
+            <input
+              placeholder="Minutos"
+              type="number"
+              class="form-control"
+              id="duracion-minutos"
+              min="0"
+              max="59" />
+          </div>
+          <h6>Genero:</h6>
+          <div class="mb-3 form-check" class="form-group" id="check-genero">
+            <label class="form-check-label" for="accion"
+              ><input
+                type="checkbox"
+                class="form-check-input"
+                id="accion"
+                name="genero"
+                value="accion" />Accion</label
+            >
+
+            <label class="form-check-label" for="aventura"
+              ><input
+                type="checkbox"
+                class="form-check-input"
+                id="aventura"
+                name="genero"
+                value="aventura" />Aventura</label
+            >
+
+            <label class="form-check-label" for="drama"
+              ><input
+                type="checkbox"
+                class="form-check-input"
+                id="drama"
+                name="genero"
+                value="drama" />Drama</label
+            >
+
+            <label class="form-check-label" for="fantasia"
+              ><input
+                type="checkbox"
+                class="form-check-input"
+                id="fantasia"
+                name="genero"
+                value="fantasia" />Fantasia</label
+            >
+
+            <label class="form-check-label" for="comedia"
+              ><input
+                type="checkbox"
+                class="form-check-input"
+                id="comedia"
+                name="genero"
+                value="comedia" />Comedia</label
+            >
+
+            <label class="form-check-label" for="romance"
+              ><input
+                type="checkbox"
+                class="form-check-input"
+                id="romance"
+                name="genero"
+                value="romance" />Romance</label
+            >
+
+            <label class="form-check-label" for="ciencia-ficcion"
+              ><input
+                type="checkbox"
+                class="form-check-input"
+                id="ciencia-ficcion"
+                name="genero"
+                value="ciencia ficcion" />Ciencia Ficcion</label
+            >
+          </div>
+          <h6>Puntuacion:</h6>
+          <div class="estrellas">
+            <input
+              type="radio"
+              id="estrella10"
+              name="rating"
+              value="10" /><label for="estrella10">★</label>
+            <input type="radio" id="estrella9" name="rating" value="9" /><label
+              for="estrella9"
+              >★</label
+            >
+            <input type="radio" id="estrella8" name="rating" value="8" /><label
+              for="estrella8"
+              >★</label
+            >
+            <input type="radio" id="estrella7" name="rating" value="7" /><label
+              for="estrella7"
+              >★</label
+            >
+            <input type="radio" id="estrella6" name="rating" value="6" /><label
+              for="estrella6"
+              >★</label
+            >
+            <input type="radio" id="estrella5" name="rating" value="5" /><label
+              for="estrella5"
+              >★</label
+            >
+            <input type="radio" id="estrella4" name="rating" value="4" /><label
+              for="estrella4"
+              >★</label
+            >
+            <input type="radio" id="estrella3" name="rating" value="3" /><label
+              for="estrella3"
+              >★</label
+            >
+            <input type="radio" id="estrella2" name="rating" value="2" /><label
+              for="estrella2"
+              >★</label
+            >
+            <input type="radio" id="estrella1" name="rating" value="1" /><label
+              for="estrella1"
+              >★</label
+            >
+          </div>
+
+          <label for="url-form" class="form-label">Imagen:</label>
+          <input
+            type="url"
+            class="form-control"
+            id="url-form"
+            placeholder="Introduce tu url" /><br />
+          <button id="boton-form" type="submit" class="btn btn-primary">
+            Crear
+          </button>
+          <button id="resetear" type="button" class="btn btn-primary">
+            Reset
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="./public/bundle.js"></script>
+  </body>
+</html>

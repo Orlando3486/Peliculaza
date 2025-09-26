@@ -1,0 +1,335 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(32, 99, 188);
+}
+#cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 6rem;
+  background-color: rgba(165, 13, 13, 0.105);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#titulo {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  color: rgb(186, 21, 32);
+}
+
+#link {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-family: "Rubik Mono One", monospace;
+  transition: 0.8s;
+  margin: 0 1rem 0 1rem;
+}
+
+#link:hover {
+  color: aliceblue;
+  border: solid 1px rgba(255, 255, 255, 0.799);
+  border-radius: 0.5rem;
+  background-color: rgb(45, 90, 203);
+  text-decoration: underline;
+}
+
+#logo {
+  width: 11rem;
+  border-radius: 100%;
+  mix-blend-mode: multiply;
+}
+
+#titulo-taquilleras {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: rgba(230, 238, 238, 0.892);
+  text-align: center;
+  padding: 1.5rem;
+  text-decoration: underline;
+}
+
+#imagen-estrenos {
+  border-radius: 1rem;
+  border: solid 2px whitesmoke;
+  height: 50rem;
+}
+
+#titulo-favoritas {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 1.4rem;
+  color: rgba(230, 238, 238, 0.892);
+  text-align: center;
+  text-decoration: underline;
+}
+
+#principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#lanzamientos {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 1.4rem;
+  color: rgba(230, 238, 238, 0.892);
+  text-align: center;
+  padding-top: 2rem;
+  text-decoration: underline;
+}
+
+#contenedor-tarjetas {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  min-height: 30rem;
+}
+
+#contenedor {
+  padding-top: 3rem;
+  background-color: rgba(165, 13, 13, 0.105);
+  border-radius: 1rem;
+  margin: 9rem 2rem 2rem 2rem;
+}
+
+.tarjetas {
+  width: 15rem;
+  height: 23rem;
+  border: 1px solid #ccc;
+  margin: 1rem;
+  transition: transform 0.3s;
+  overflow: hidden;
+  border: solid 2px whitesmoke;
+  border-radius: 0.5rem;
+  transition: transform 0.5s;
+  filter: drop-shadow(0 10px 10px rgba(241, 213, 153, 0.507));
+}
+
+.tarjetas:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px rgba(229, 99, 99, 0.725);
+  transition: all 0.5s ease;
+}
+
+.detalles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: aliceblue;
+  padding: 10px;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 0.5rem;
+  line-height: 1.3rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tarjetas:hover .detalles {
+  opacity: 1;
+}
+
+.imagen-tarjeta {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titulo-tarjeta {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.divHora {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#seccion-formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+#titulo-formulario {
+  color: aliceblue;
+  margin-bottom: 1.5rem;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+#formulario {
+  color: aliceblue;
+  background-color: rgba(165, 13, 13, 0.105);
+  height: 50%;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+
+#formulario:hover {
+  box-shadow: 10px 10px 20px rgba(229, 99, 99, 0.725);
+}
+
+#check-genero {
+  display: flex;
+  gap: 2rem;
+}
+
+#check-genero label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#horas-minutos {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 1rem;
+}
+
+.estrellas {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.estrellas input {
+  display: none;
+}
+
+.estrellas label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.estrellas input:checked ~ label {
+  color: gold;
+}
+
+.estrellas label:hover,
+.estrellas label:hover ~ label {
+  color: gold;
+}
+
+#titulo-acerca {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 1.4rem;
+  color: rgba(230, 238, 238, 0.892);
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+}
+
+#contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+#articuloTexto {
+  color: rgb(224, 231, 238);
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  background-color: rgba(165, 13, 13, 0.105);
+  height: 50%;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: justify;
+  transition: all 0.5s ease;
+}
+
+#articuloTexto:hover {
+  box-shadow: 10px 10px 20px rgba(229, 99, 99, 0.725);
+}
+
+#tituloPresentacion {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 1.4rem;
+  color: rgba(230, 238, 238, 0.892);
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+}
+
+#contenedor-foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+#articuloFoto {
+  display: flex;
+  align-items: center;
+  color: rgb(224, 231, 238);
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  background-color: rgba(165, 13, 13, 0.105);
+  height: 50%;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: justify;
+  transition: all 0.5s ease;
+}
+
+#articuloFoto:hover {
+  box-shadow: 10px 10px 20px rgba(229, 99, 99, 0.725);
+}
+
+#foto-orlando {
+  padding: 2rem;
+  height: 20rem;
+  border-radius: 4rem;
+}
+
+label {
+  padding-top: 0.5rem;
+}
+
+.btn-eliminar {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
